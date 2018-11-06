@@ -4,11 +4,16 @@
 #
 #-------------------------------------------------
 
+# 引入core与gui模块
 QT       += core gui
 
+# 高于4版本，添加QT += widgets，为了兼容QT4
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+# 目标应用程序配置
 TARGET = HelloWorld
+
+# 指令makefile的类型为应用程序
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -24,10 +29,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+# 源文件 .cpp
 SOURCES += \
         main.cpp \
         widget.cpp
 
+# 头文件 .h
 HEADERS += \
         widget.h
 
