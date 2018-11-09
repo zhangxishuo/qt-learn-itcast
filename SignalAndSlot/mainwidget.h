@@ -12,6 +12,8 @@ public:
     MainWidget(QWidget *parent = nullptr);
     ~MainWidget();
 
+    void releaseSlot();
+
 private:
     QPushButton button;
     QPushButton *ptrButton;

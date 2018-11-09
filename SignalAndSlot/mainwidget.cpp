@@ -19,6 +19,8 @@ MainWidget::MainWidget(QWidget *parent)
      * &MainWidget::close     槽(信号处理)函数
      */
     connect(ptrButton, &QPushButton::pressed, this, &MainWidget::close);
+
+    connect(&button, &QPushButton::released, this, &MainWidget::releaseSlot);
 }
 
 MainWidget::~MainWidget()
